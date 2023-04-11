@@ -14,23 +14,23 @@ const jwt = require('jsonwebtoken');
 const secrect_key = "mncn"
 // import library and files
 
-//const swaggerDocumentTest = require('./testSwagger.json');
+const swaggerDocumentTest = require('./testSwagger.json');
 //create the connection to database
-// const connection = mysql.createPool({
-//     host: process.env.DB_HOST,
-//     user: process.env.DB_USER,
-//     password: process.env.DB_PASSWORD,
-//     database: process.env.DB_DATABASE,
-//     port: process.env.DB_PORT
-// });
 const connection = mysql.createPool({
-    
-    host: '127.0.0.1',
-    user: 'root',
-    password: '',
-    database: 'projectnumer',
-    port: '3306'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    port: process.env.DB_PORT
 });
+// const connection = mysql.createPool({
+    
+//     host: '127.0.0.1',
+//     user: 'root',
+//     password: '',
+//     database: 'projectnumer',
+//     port: '3306'
+// });
 
 function verifyToken(req, res, next) {
     console.log("123456");
