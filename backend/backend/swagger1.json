@@ -1,0 +1,44 @@
+{
+    "definition": {
+      "servers": {
+        "description": "SwaggerHub API Auto Mocking"
+      },
+      "info": {
+        "description": "This is a simple API",
+        "version": "1.0.0",
+        "title": "Simple Inventory API",
+        "contact": {
+          "email": ""
+        },
+        "license": {
+          "name": "Apache 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+      },
+      "tags": [
+        {
+          "name": "Root data"
+        }
+      ],
+      
+      "paths": {
+        "/dataEquation": {
+          "get": {
+            "tags": [
+              "Root data"
+            ],
+            "summary":"Get equations for rootofequation",
+            "responses": {
+              "200": {
+                "description": "get data completed"
+              },
+              "404": {
+                "description": "page not found"
+              }
+            }
+          }
+        }
+      }
+    },
+    "apis": []
+  }
