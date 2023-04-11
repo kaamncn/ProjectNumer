@@ -22,7 +22,8 @@ jobs:
         node-version: 14
     - name: install module backend
       run: |
-        cd backend/backend
+        cd backend
+        cd backend
         npm i
     - name: install module frontend
       run: |
@@ -30,7 +31,8 @@ jobs:
         npm i
     - name: test backend
       run: |
-        cd backend/backend
+        cd backend
+        cd backend
         npm test
     - name: test frontend
       run: |
