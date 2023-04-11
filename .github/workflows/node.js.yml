@@ -23,7 +23,6 @@ jobs:
     - name: install module backend
       run: |
         cd backend
-        cd backend
         npm i
     - name: install module frontend
       run: |
@@ -31,7 +30,6 @@ jobs:
         npm i
     - name: test backend
       run: |
-        cd backend
         cd backend
         npm test
     - name: test frontend
