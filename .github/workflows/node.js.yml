@@ -32,7 +32,6 @@ jobs:
     - name: test backend
       run: |
         cd backend
-        cd backend
         npm test
     - name: test frontend
       run: |
